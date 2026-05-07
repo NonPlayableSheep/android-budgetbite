@@ -1,0 +1,53 @@
+{
+    "context": {
+        "build": {
+            "brand": "google",
+            "device": "emu64x",
+            "fingerprint": "google/sdk_gphone64_x86_64/emu64x:13/TE1A.220922.010/9219351:user/release-keys",
+            "id": "TE1A.220922.010",
+            "model": "sdk_gphone64_x86_64",
+            "type": "user",
+            "version": {
+                "codename": "REL",
+                "sdk": 33
+            }
+        },
+        "cpuCoreCount": 4,
+        "cpuLocked": false,
+        "cpuMaxFreqHz": 2000,
+        "memTotalBytes": 2061840384,
+        "sustainedPerformanceModeEnabled": false,
+        "artMainlineVersion": 331012010,
+        "osCodenameAbbreviated": "T",
+        "compilationMode": "run-from-apk"
+    },
+    "benchmarks": [
+        {
+            "name": "startupBenchmark",
+            "params": {},
+            "className": "com.example.benchmark.StartupBenchmark",
+            "totalRunTimeNs": 8894761200,
+            "metrics": {
+                "timeToInitialDisplayMs": {
+                    "minimum": 962.3438,
+                    "maximum": 962.3438,
+                    "median": 962.3438,
+                    "runs": [
+                        962.3438
+                    ]
+                }
+            },
+            "sampledMetrics": {},
+            "warmupIterations": 0,
+            "repeatIterations": 1,
+            "thermalThrottleSleepSeconds": 0,
+            "profilerOutputs": [
+                {
+                    "type": "PerfettoTrace",
+                    "label": "Trace Iteration 0",
+                    "filename": "StartupBenchmark_startupBenchmark_iter000_2025-01-18-17-48-33.perfetto-trace"
+                }
+            ]
+        }
+    ]
+}

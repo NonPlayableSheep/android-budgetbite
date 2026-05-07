@@ -1,0 +1,16 @@
+appId: de.fhe.budget_bite
+---
+- launchApp
+- assertVisible:
+    text: "Ingredients"
+- tapOn:
+    id: "de.fhe.budget_bite:id/fragment_ingredients_create_btn"
+- assertVisible:
+    text: "Edit Ingredient"
+- tapOn:
+    id: "de.fhe.budget_bite:id/fragment_detail_ingredient_edit_identifier"
+- repeat:
+    times: 3
+    commands:
+        - eraseText
+        - inputText: "Hello World"

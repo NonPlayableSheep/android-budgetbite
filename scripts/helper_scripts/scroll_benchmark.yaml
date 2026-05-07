@@ -1,0 +1,9 @@
+appId: de.fhe.budget_bite
+---
+- launchApp
+- assertVisible:
+    text: "Ingredients"
+- repeat:
+    times: 2
+    commands:
+      - scroll

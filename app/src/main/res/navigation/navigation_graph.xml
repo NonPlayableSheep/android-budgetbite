@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    android:label="Ingredients"
+    app:startDestination="@id/searchFragment">
+    <fragment
+        android:id="@+id/plannerFragment"
+        android:name="de.fhe.budget_bite.view.planner.PlannerFragment"
+        android:label="PlannerFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="de.fhe.budget_bite.view.search.SearchFragment"
+        android:label="Add Meal Items">
+        <action
+            android:id="@+id/action_searchFragment_to_detailIngredientFragment"
+            app:destination="@id/detailIngredientFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailIngredientEditFragment"
+            app:destination="@id/detailIngredientEditFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailRecipeEditFragment"
+            app:destination="@id/detailRecipeEditFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailRecipeFragment"
+            app:destination="@id/detailRecipeFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailMealPlanEditFragment"
+            app:destination="@id/detailMealPlanEditFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_detailMealPlanFragment"
+            app:destination="@id/detailMealPlanFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreFragment"
+        android:name="de.fhe.budget_bite.view.more.MoreFragment"
+        android:label="MoreFragment" />
+    <fragment
+        android:id="@+id/ingredientsFragment"
+        android:name="de.fhe.budget_bite.view.search.ingredient.IngredientsFragment"
+        android:label="Add Ingredients" />
+    <fragment
+        android:id="@+id/detailIngredientFragment"
+        android:name="de.fhe.budget_bite.view.detail.ingredient.DetailIngredientFragment"
+        android:label="Ingredient">
+        <action
+            android:id="@+id/action_detailIngredientFragment_to_detailIngredientEditFragment"
+            app:destination="@id/detailIngredientEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailIngredientEditFragment"
+        android:name="de.fhe.budget_bite.view.detail.ingredient.DetailIngredientEditFragment"
+        android:label="Edit Ingredient"/>
+    <fragment
+        android:id="@+id/detailRecipeFragment"
+        android:name="de.fhe.budget_bite.view.detail.recipe.DetailRecipeFragment"
+        android:label="Recipe">
+        <action
+            android:id="@+id/action_detailRecipeFragment_to_detailRecipeEditFragment"
+            app:destination="@id/detailRecipeEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRecipeEditFragment"
+        android:name="de.fhe.budget_bite.view.detail.recipe.DetailRecipeEditFragment"
+        android:label="Edit Recipe">
+        <action
+            android:id="@+id/action_detailRecipeEditFragment_to_ingredientsFragment"
+            app:destination="@id/ingredientsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMealPlanEditFragment"
+        android:name="de.fhe.budget_bite.view.detail.meal_plan.DetailMealPlanEditFragment"
+        android:label="Edit Meal Plan" >
+        <action
+            android:id="@+id/action_detailMealPlanEditFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailMealPlanFragment"
+        android:name="de.fhe.budget_bite.view.detail.meal_plan.DetailMealPlanFragment"
+        android:label="Meal Plan" >
+        <action
+            android:id="@+id/action_detailMealPlanFragment_to_detailMealPlanEditFragment"
+            app:destination="@id/detailMealPlanEditFragment" />
+    </fragment>
+</navigation>

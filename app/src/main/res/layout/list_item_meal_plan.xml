@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    card_view:cardCornerRadius="8dp"
+    card_view:cardElevation="4dp"
+    android:background="@color/cardview_light_background"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="2dp"
+        >
+
+        <TextView
+            android:id="@+id/list_item_meal_plan_identifier"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            android:ellipsize="end"
+            tools:text="Green Day"
+            android:layout_weight="2"
+            />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            />
+
+
+        <TextView
+            android:id="@+id/list_item_meal_plan_calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            tools:text="23 Cal"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:textSize="26sp"
+            android:textStyle="italic"
+            android:text="@string/symbol_dot"
+            android:paddingHorizontal="4dp"
+            />
+
+        <TextView
+            android:id="@+id/list_item_meal_plan_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:gravity="center"
+            tools:text="1.99€"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

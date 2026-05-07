@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:paddingVertical="2dp"
+    android:paddingHorizontal="10dp"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/child_fragment_meal_plan_meal_type_identifier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Green Day"
+        android:layout_weight="2"
+        />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        />
+
+
+    <TextView
+        android:id="@+id/child_fragment_meal_plan_meal_type_calories"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        tools:text="23 Cal"
+        android:layout_weight="1"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/symbol_dot"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingHorizontal="4dp" />
+
+    <TextView
+        android:id="@+id/child_fragment_meal_plan_meal_type_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        tools:text="1.99€"
+        android:layout_weight="1"
+        />
+
+    <ImageButton
+        android:id="@+id/child_fragment_meal_type_edit_add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_plus"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

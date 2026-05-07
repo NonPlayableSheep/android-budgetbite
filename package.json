@@ -1,0 +1,19 @@
+{
+  "name": "1_sose24_praxis_projekt_fleischhauer",
+  "version": "1.0.0",
+  "description": "1. [Project Description](#project-description)\r 2. [Notes](#notes)  \r    2.1 [Benchmark Module](#benchmark-module)  \r    2.2 [Development Device](#development-device)\r 3. [Dependencies](#dependencies)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.ai.fh-erfurt.de/ja6235fl/sose24_praxis_projekt_fleischhauer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@perf-profiler/reporter": "^0.9.0",
+    "dotenv": "^17.4.2"
+  }
+}

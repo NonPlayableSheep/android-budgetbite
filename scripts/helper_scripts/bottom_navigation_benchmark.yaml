@@ -1,0 +1,14 @@
+appId: de.fhe.budget_bite
+---
+- launchApp
+- assertVisible:
+    text: "Ingredients"
+- repeat:
+    times: 10
+    commands:
+        - tapOn:
+            text: "Planner"
+        - tapOn:
+            text: "Search"
+        - tapOn:
+            text: "More"
