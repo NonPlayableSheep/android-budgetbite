@@ -9,8 +9,8 @@
    - [Run Requirements](#run-requirements)
 
 ## Project Description & Features
-BudgetBite is an Android meal planner application with integrated budgeting and nutrition tracking features.
-The application allows users to manage ingredients, recipes, and meal plans. Ingredients can be assigned to recipes, while recipes and ingredients can be organized into meal plans.
+BudgetBite is an Android meal planner application with integrated budgeting and nutrition tracking features.  
+The application allows users to manage ingredients, recipes, and meal plans. Ingredients can be assigned to recipes, while recipes and ingredients can be organized into meal plans.  
 For each ingredient, nutritional values and pricing information can be configured. Nutritional values and total costs of recipes and meal plans are automatically calculated based on their components.
 
 ## Technologies
@@ -31,7 +31,7 @@ For each ingredient, nutritional values and pricing information can be configure
 - Repository Pattern
 
 ## Setup & Start
-Clone the repository and open the project in Android Studio.
+Clone the repository and open the project in Android Studio.  
 Build and run the application on an Android emulator or physical device.
 
 ## Environment
@@ -41,8 +41,8 @@ Build and run the application on an Android emulator or physical device.
 
 ## Notes
 ### Thesis Preparation Extensions
-The original practical project was later extended in preparation for a subsequent bachelor's thesis.
-Additional components such as the benchmark module and Jetpack Compose integrations were introduced as part of the thesis-related work and are therefore outside the scope of the original practical project.
+The original practical project was later extended in preparation for a subsequent bachelor's thesis.  
+Additional components such as the benchmark module and Jetpack Compose integrations were introduced as part of the thesis-related work and are therefore outside the scope of the original practical project.  
 Within the context of the practical project, these additions can be ignored.
 
 ### Run Requirements
